@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">VocaApp</string>
+    <string name="title_activity_study">StudyActivity</string>
+</resources>

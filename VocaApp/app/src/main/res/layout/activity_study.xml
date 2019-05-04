@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudyActivity">
+
+    <ImageView
+        android:id="@+id/stdFoodBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tray"
+        app:layout_constraintStart_toStartOf="@+id/stdSchoolBtn"
+        app:layout_constraintTop_toTopOf="@+id/stdFamilyBtn" />
+
+    <ImageView
+        android:id="@+id/stdFamilyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="29dp"
+        android:src="@drawable/family"
+        app:layout_constraintBottom_toTopOf="@+id/stdAnimalBtn"
+        app:layout_constraintEnd_toEndOf="@+id/stdAnimalBtn" />
+
+    <ImageView
+        android:id="@+id/stdSchoolBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/school"
+        app:layout_constraintEnd_toStartOf="@+id/stdAnimalBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stdFoodBtn" />
+
+    <ImageView
+        android:id="@+id/stdAnimalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="33dp"
+        android:src="@drawable/lion"
+        app:layout_constraintBottom_toTopOf="@+id/stdNumberBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/stdSchoolBtn" />
+
+    <ImageView
+        android:id="@+id/stdPlaceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginBottom="29dp"
+        android:src="@drawable/island"
+        app:layout_constraintBottom_toTopOf="@+id/stdHobbyBtn"
+        app:layout_constraintEnd_toStartOf="@+id/stdNumberBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/stdNumberBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="29dp"
+        android:src="@drawable/seven"
+        app:layout_constraintBottom_toTopOf="@+id/stdColorBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/stdPlaceBtn" />
+
+    <ImageView
+        android:id="@+id/stdHobbyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginBottom="41dp"
+        android:src="@drawable/puzzle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/stdColorBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/stdColorBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="41dp"
+        android:src="@drawable/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/stdHobbyBtn" />
+</android.support.constraint.ConstraintLayout>
