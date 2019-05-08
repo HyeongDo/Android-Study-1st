@@ -1,8 +1,10 @@
 package com.example.vocaapp;
 
+import android.content.Intent;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 
 public class StudyActivity extends AppCompatActivity {
@@ -25,5 +27,21 @@ public class StudyActivity extends AppCompatActivity {
         stdPlaceBtn = (ImageView)findViewById(R.id.stdPlaceBtn);
         stdHobbyBtn = (ImageView)findViewById(R.id.stdHobbyBtn);
         stdColorBtn = (ImageView)findViewById(R.id.stdColorBtn);
+
+        stdFoodBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),StudyFoodMain.class);
+                startActivity(i);
+            }
+        });
+
+        stdFamilyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),StudyFamilyMain.class);
+                startActivity(i);
+            }
+        });
     }
 }
