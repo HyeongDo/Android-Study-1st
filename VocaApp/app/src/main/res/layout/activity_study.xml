@@ -10,28 +10,33 @@
         android:id="@+id/stdFoodBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="36dp"
         android:src="@drawable/tray"
-        app:layout_constraintStart_toStartOf="@+id/stdSchoolBtn"
-        app:layout_constraintTop_toTopOf="@+id/stdFamilyBtn" />
+        app:layout_constraintEnd_toStartOf="@+id/stdFamilyBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/stdFamilyBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
         android:src="@drawable/family"
-        app:layout_constraintBottom_toTopOf="@+id/stdAnimalBtn"
-        app:layout_constraintEnd_toEndOf="@+id/stdAnimalBtn" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/stdFoodBtn"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/stdSchoolBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
         android:src="@drawable/school"
         app:layout_constraintEnd_toStartOf="@+id/stdAnimalBtn"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,45 +46,45 @@
         android:id="@+id/stdAnimalBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="33dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
         android:src="@drawable/lion"
-        app:layout_constraintBottom_toTopOf="@+id/stdNumberBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/stdSchoolBtn" />
+        app:layout_constraintStart_toEndOf="@+id/stdSchoolBtn"
+        app:layout_constraintTop_toBottomOf="@+id/stdFamilyBtn" />
 
     <ImageView
         android:id="@+id/stdPlaceBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
         android:src="@drawable/island"
-        app:layout_constraintBottom_toTopOf="@+id/stdHobbyBtn"
         app:layout_constraintEnd_toStartOf="@+id/stdNumberBtn"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stdSchoolBtn" />
 
     <ImageView
         android:id="@+id/stdNumberBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
         android:src="@drawable/seven"
-        app:layout_constraintBottom_toTopOf="@+id/stdColorBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/stdPlaceBtn" />
+        app:layout_constraintStart_toEndOf="@+id/stdPlaceBtn"
+        app:layout_constraintTop_toBottomOf="@+id/stdAnimalBtn" />
 
     <ImageView
         android:id="@+id/stdHobbyBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginBottom="41dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="28dp"
         android:src="@drawable/puzzle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/stdColorBtn"
@@ -89,11 +94,12 @@
         android:id="@+id/stdColorBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="41dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="28dp"
         android:src="@drawable/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/stdHobbyBtn" />
+
 </android.support.constraint.ConstraintLayout>

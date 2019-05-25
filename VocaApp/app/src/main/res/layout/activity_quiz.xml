@@ -6,4 +6,99 @@
     android:layout_height="match_parent"
     tools:context=".QuizActivity">
 
+    <ImageView
+        android:id="@+id/quizFoodBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:src="@drawable/tray"
+        app:layout_constraintEnd_toStartOf="@+id/quizFamilyBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/quizFamilyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:src="@drawable/family"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quizFoodBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/quizSchoolBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:src="@drawable/school"
+        app:layout_constraintEnd_toStartOf="@+id/quizAnimalBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizFoodBtn" />
+
+    <ImageView
+        android:id="@+id/quizAnimalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:src="@drawable/lion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quizSchoolBtn"
+        app:layout_constraintTop_toBottomOf="@+id/quizFamilyBtn" />
+
+    <ImageView
+        android:id="@+id/quizPlaceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/island"
+        app:layout_constraintEnd_toStartOf="@+id/quizNumberBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizSchoolBtn" />
+
+    <ImageView
+        android:id="@+id/quizNumberBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:src="@drawable/seven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quizPlaceBtn"
+        app:layout_constraintTop_toBottomOf="@+id/quizAnimalBtn" />
+
+    <ImageView
+        android:id="@+id/quizHobbyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="41dp"
+        android:src="@drawable/puzzle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/quizColorBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/quizColorBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:src="@drawable/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quizHobbyBtn" />
 </android.support.constraint.ConstraintLayout>

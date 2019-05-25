@@ -31,7 +31,7 @@ public class StudyActivity extends AppCompatActivity {
         stdFoodBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),StudyFoodMain.class);
+                Intent i = new Intent(getApplicationContext(),StudyFood1.class);
                 startActivity(i);
             }
         });
@@ -39,7 +39,55 @@ public class StudyActivity extends AppCompatActivity {
         stdFamilyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),StudyFamilyMain.class);
+                Intent i = new Intent(getApplicationContext(),StudyFamily1.class);
+                startActivity(i);
+            }
+        });
+
+        stdSchoolBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),StudySchool1.class);
+                startActivity(i);
+            }
+        });
+
+        stdAnimalBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),StudyAnimal1.class);
+                startActivity(i);
+            }
+        });
+
+        stdNumberBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),StudyNumber1.class);
+                startActivity(i);
+            }
+        });
+
+        stdPlaceBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),StudyPlace1.class);
+                startActivity(i);
+            }
+        });
+
+        stdColorBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),StudyColor1.class);
+                startActivity(i);
+            }
+        });
+
+        stdHobbyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),StudyHobby1.class);
                 startActivity(i);
             }
         });

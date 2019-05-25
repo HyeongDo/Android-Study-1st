@@ -1,2 +1,7 @@
+링크따오기
+https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/elephant
+=>F12버튼 =>왼쪽대각선위 포커싱버튼 => 발음소리 버튼 누르고 => MP3 파일링크를 현재 링크에 이어붙임 => 완성
+
+
 코끼리
-https://dict-dn.pstatic.net/v?_lsu_sa_=3d98205c5d9f3bb6259f31c4399424fe0d356af5f70e9f226cb2f9726b4660014351075a61455d7b19916fb56028d0098482316b08b88b0231db5e3d5492c6144a65a9ed4351f3551ef78b13eb937ee150fdbb2662ee3ebef07dfe497113a9efa11c2586fbf5b4ac953c70bebe747ed0f9eb1f64b57f3aba9387410c1eb8b744
+https://dictionary.cambridge.org/ko/media/%EC%98%81%EC%96%B4/us_pron/e/eus/eus75/eus75655.mp3
