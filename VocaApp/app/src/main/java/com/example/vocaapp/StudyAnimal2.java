@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class StudyAnimal2 extends AppCompatActivity {
 
@@ -14,6 +15,8 @@ public class StudyAnimal2 extends AppCompatActivity {
     MediaPlayer player;
 
     ImageView play;
+
+    TextView korName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +49,21 @@ public class StudyAnimal2 extends AppCompatActivity {
             }
         });
 
+        korName = (TextView)findViewById(R.id.korName);
+        korName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setKorName();
+            }
+        });
 
+
+
+    }
+
+    public void setKorName(){
+        korName = (TextView)findViewById(R.id.korName);
+        korName.setText("호랑이");
     }
 
     public void playAudio(){

@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class StudyAnimal9 extends AppCompatActivity {
 
@@ -15,6 +16,7 @@ public class StudyAnimal9 extends AppCompatActivity {
 
     ImageView play;
 
+    TextView korName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +48,21 @@ public class StudyAnimal9 extends AppCompatActivity {
             }
         });
 
+        korName = (TextView)findViewById(R.id.korName);
+        korName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setKorName();
+            }
+        });
 
+
+
+    }
+
+    public void setKorName(){
+        korName = (TextView)findViewById(R.id.korName);
+        korName.setText("뱀");
     }
 
     public void playAudio(){
