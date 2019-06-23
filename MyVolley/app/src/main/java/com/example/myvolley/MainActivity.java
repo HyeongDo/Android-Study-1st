@@ -105,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
             int countMovie = movieList.boxOfficeResult.dailyBoxOfficeList.size();
             println("박스오피스 타입 : "+movieList.boxOfficeResult.boxofficeType);
             println("응답받은 영화 갯수 : "+countMovie);
+            println("네번째 영화이름"+movieList.boxOfficeResult.dailyBoxOfficeList.get(3).movieNm);
 
         }
     }
