@@ -80,11 +80,13 @@ public class MainActivity extends AppCompatActivity {
             for(int i=0; i<movieList.result.size(); i++){
 
                 MovieInfo movieInfo = movieList.result.get(i);
-                println("영화 #"+i+"->"+movieInfo.id +","+movieInfo.title+","+movieInfo.grade);
+                println("영화 #"+i+"->"+movieInfo.id +","+movieInfo.보안+","+movieInfo.grade);
             }
 
         }
     }
+
+
     public void println(String data){
         textView.append(data+"\n");
     }

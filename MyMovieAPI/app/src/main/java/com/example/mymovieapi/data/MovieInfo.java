@@ -3,7 +3,7 @@ package com.example.mymovieapi.data;
 public class MovieInfo {
 
     public int id;
-    public String title;
+    public String 보안;
     public String title_eng;
     public String date;
     public float user_rating;

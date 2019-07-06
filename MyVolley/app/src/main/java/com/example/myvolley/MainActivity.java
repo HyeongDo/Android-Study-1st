@@ -63,7 +63,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void sendRequest(){
        // String url = "https://www.google.co.kr";
-        String url = "http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=430156241533f1d058c603178cc3ca0e&targetDt=20120101";
+        //String url = "http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=430156241533f1d058c603178cc3ca0e&targetDt=20120101";
+        String url = "https://yuchocopie.github.io/Dongnebangne/app/B.json";
 
         StringRequest request = new StringRequest(
                 Request.Method.GET,
@@ -82,7 +83,9 @@ public class MainActivity extends AppCompatActivity {
                      println("에러->"+error.getMessage());
                     }
                 }
-        ){
+        )
+
+        {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> params = new HashMap<String, String>();
